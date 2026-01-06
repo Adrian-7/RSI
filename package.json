@@ -1,10 +1,21 @@
 {
+  "name": "rsi-bot",
+  "version": "1.0.0",
   "type": "module",
+
+  "scripts": {
+    "start": "node ws-bybit.js"
+  },
+
   "dependencies": {
     "@debut/indicators": "^1.3.22",
     "dotenv": "^17.2.3",
     "node-telegram-bot-api": "^0.67.0",
     "technicalindicators": "^3.1.0",
     "ws": "^8.18.3"
+  },
+
+  "engines": {
+    "node": ">=18"
   }
 }
