@@ -21,7 +21,7 @@ let lastAlertTime = 0;   // cand am trimis ultima alertă
 // 1️⃣ — FUNCTIA DE ISTORIC
 async function loadHistory() {
 const url =
-  "https://api.bybit.com/spot/v3/public/quote/kline?symbol=SOLUSDT&interval=30&limit=1000";
+  "https://api.bybitglobal.com/v5/market/kline?category=spot&symbol=SOLUSDT&interval=30&limit=1000";
 
   const res = await fetch(url);
   const data = await res.json();
